@@ -87,7 +87,7 @@ The original code has something like this too, but I could not get it to work wi
 Additionally, the code uses ADetalier, so if you don't use that extension in auto1111 use this version of the code: 
 https://raw.githubusercontent.com/RandomInternetPreson/TextGenTips/main/sd_api_pictures/without_ADetailer/script.py
 
-You need to edit your webui-user in the auto1111 install directory so that Auto1111 is running on port 7861, or you can edit line 21 of the script.py file
+You need to edit your webui-user in the auto1111 install directory so that Auto1111 is running on port 7861, or you can edit the script.py file
 
 
 Now for my slighlty janky implementation, you need to start Auto1111 first, then open the UI and manually load the model onto CPU Ram by checking the "Uload the SD Checkpoiint to RAM" button.  You can close the auto1111 UI at this point, and don't need to restart it if you need to restart textgen.  I'll work on the code doing this automatically later.
