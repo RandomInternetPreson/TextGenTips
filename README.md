@@ -60,7 +60,7 @@ chmod +x atsetup.sh
 
 12. Whisper_STT comes with textgen you just need to install the dependendies, oobabooga has created an update_wizard file for each operating system, simply click on that and follow the instructions to install the requried Whisper_STT dependencies
 
-13. Okay now the last extension, sd_api_pictures.  You don't need to install anything for this extension, but if you want the same functionality as the video, you need to replace your script.py file in the sd_api_pictures extensions folder with this version:
+13. Okay now the last extension, sd_api_pictures.  You don't need to install anything for this extension, but if you want the same functionality as the video, you need to replace your script.py file in the sd_api_pictures extensions folder with this version: https://raw.githubusercontent.com/RandomInternetPreson/TextGenTips/main/sd_api_pictures/with_ADetailer/script.py
     
 This is a simplified version of the original version with some changes that unload and load the model from GPU RAM to and from CPU RAM, auto1111's api will be used when the words "send" and "prompt" are see in the users' message to the LLM.  So if you type "send me a prompt of a kitten attacking a great white shark underwater" the LLMs response to you will be fed to the stable diffusion model.
 
@@ -84,7 +84,8 @@ def unload_sd_model():
 
 The original code has something like this too, but I could not get it to work with Text-generation-webui-model_ducking.
 
-Additionally, the code uses ADetalier, so if you don't use that extension in auto1111 use this version of the code:
+Additionally, the code uses ADetalier, so if you don't use that extension in auto1111 use this version of the code: 
+https://raw.githubusercontent.com/RandomInternetPreson/TextGenTips/main/sd_api_pictures/without_ADetailer/script.py
 
 You need to edit your webui-user in the auto1111 install directory so that Auto1111 is running on port 7861, or you can edit line 21 of the script.py file
 
