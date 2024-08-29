@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 29 18:06:29 2024
+
+@author: myself
+"""
+
 import traceback
 from pathlib import Path
 
@@ -60,7 +68,10 @@ class Exllamav2Model:
 
         # Check if TP is enabled and load model with TP
         if shared.args.enable_tp:
-            model.load_tp()  # Ensure TP loading is used
+            split = None
+            if shared.args.gpu_split:
+                split = [float(alloc) for alloc in shared.args.gpu_split.split(",")]
+            model.load_tp(split)  # Ensure TP loading is used
         else:
             if not shared.args.autosplit:
                 split = None
