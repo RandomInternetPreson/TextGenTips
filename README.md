@@ -121,4 +121,9 @@ git clone https://github.com/turboderp/exllamav2
 pip install -r requirements.txt
 pip install .
 ```
-3. After you've done this replace your exllamav2.py file and shared.py file with these: 
+3. After you've done this replace your exllamav2.py file and shared.py (located in the modules folder) file with these: https://github.com/RandomInternetPreson/TextGenTips/tree/main/ExllamaV2_TensorParallel_Files
+4. When running textgen add
+```
+--enable_tp
+```
+to your CMD_FLAGS.txt file
