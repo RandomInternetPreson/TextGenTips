@@ -1,7 +1,7 @@
 # TextGenTips
 Collection of tips for using textgen in various ways
 
-**Single GPU TIPS**
+# Single GPU TIPS
 A collection of resources to help folks get a lot out of a single 24GB GPU (these instructions are for Nvidia cards)
 
 Even though models are offloaded, they use a little bit of vram.  So if your favorite model uses your gpu comptelty it may not work, you may need to quantize the model or move whisper to cpu mode.
@@ -112,7 +112,7 @@ I want you to send me a prompt of a starfish in a tuxedo. And so in doing that, 
 
 
 
-**ExllamaV2 tensor parallelism for OOB V1.14**
+# ExllamaV2 tensor parallelism for OOB V1.14
 
 1. Install the updated exllamav2 repo using the textgen cmd terminal for you os (linux for example is cmd_linux.sh)
    
