@@ -118,7 +118,7 @@ I want you to send me a prompt of a starfish in a tuxedo. And so in doing that, 
    
 Within the terminal navigate to the repositories folder "cd repositories"
 
-Run these commands 
+Run these commands (if using linux run this command first "export CUDA_HOME=/usr/local/cuda-12.1" for your version of cuda, I'm using 12.1 you might be running something different look at the directory location to figure out which you are using)
 ```
 git clone https://github.com/turboderp/exllamav2
 cd exllamav2
