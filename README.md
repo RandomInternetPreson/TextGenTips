@@ -115,14 +115,18 @@ I want you to send me a prompt of a starfish in a tuxedo. And so in doing that, 
 **ExllamaV2 tensor parallelism for OOB V1.14**
 
 1. Install the updated exllamav2 repo using the textgen cmd terminal for you os (linux for example is cmd_linux.sh)
-2. Within the terminal navigate to the repositories folder "cd repositories"
+   
+Within the terminal navigate to the repositories folder "cd repositories"
+
+Run these commands 
 ```
 git clone https://github.com/turboderp/exllamav2
+cd exllamav2
 pip install -r requirements.txt
 pip install .
 ```
-3. After you've done this replace your exllamav2.py file and shared.py (located in the modules folder) file with these: https://github.com/RandomInternetPreson/TextGenTips/tree/main/ExllamaV2_TensorParallel_Files
-4. When running textgen add
+2. After you've done this replace your exllamav2.py file and shared.py (located in the modules folder) file with these: https://github.com/RandomInternetPreson/TextGenTips/tree/main/ExllamaV2_TensorParallel_Files
+3. When running textgen add
 ```
 --enable_tp
 ```
